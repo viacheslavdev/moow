@@ -1,0 +1,92 @@
+@import 'variables'
+@import 'fonts'
+@import 'static-styles'
+
+*
+    margin: 0
+    padding: 0
+    border: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+.routes-header
+    display: inline-block
+    font-family: 'Mulish-700'
+    font-size: 1.484vw
+    margin-bottom: 10px
+    color: var(--purple-default)
+
+.enter-root
+    width: 100%
+    margin-bottom: 10px
+    padding: 15px
+    border: 1px solid #C4C4C4
+    border-radius: 10px
+    h3
+        font-family: 'Mulish-700' 
+        font-size: 1.250vw
+        margin-bottom: 15px
+    .added-block
+        display: grid
+        gap: 50px
+        grid-template-columns: repeat(2, 1fr)
+    .enter-block
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        gap: 15px 50px
+        .enter-date
+            display: flex
+            flex-direction: column
+            gap: 6px   
+            span
+                font-family: 'Mulish-500'
+                font-size: 14px
+                color: var(--black-400)
+            &-choose
+                display: flex
+                align-items: center
+                justify-content: space-between
+                align-items: flex-end
+                width: 100%
+                position: relative
+                span
+                    width: 100%
+                .calendar
+                    margin-left: 3px
+                    cursor: pointer
+                        
+    .time-info
+        display: flex
+        flex-direction: column
+        gap: 6px
+        width: fit-content
+        span 
+            font-family: 'Mulish-500'
+            font-size: 14px
+            color: var(--black-400)
+            width: fit-content
+        .work-time
+            width: 113px
+        .hour-arrive
+            width: 91px
+    .route-address
+        display: flex
+        flex-direction: column
+        gap: 6px 
+        span
+            font-family: 'Mulish-500'
+            font-size: 14px
+            color: var(--black-400)
+        &-choose
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            input
+                width: 100%
+            .address
+                margin-left: 3px
+

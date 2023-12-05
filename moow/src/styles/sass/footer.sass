@@ -1,0 +1,81 @@
+@import 'variables'
+@import 'fonts'
+@import 'static-styles'
+    
+*
+    margin: 0
+    padding: 0
+    border: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.footer
+    margin: 15px 50px
+    .footer-wrapper
+        .footer-logo
+            margin-bottom: 10px
+            height: 25px
+        .footer-sections
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-bottom: 10px
+            gap: 15px
+            .footer-column
+                display: flex
+                gap: 5px
+                .star
+                    height: 20px
+                .footer-block
+                    list-style-type: none
+                    display: flex
+                    flex-direction: column
+                    gap: 10px
+                    .footer-header
+                        width: fit-content
+                        margin-top: 2px
+                        font-size: 14px
+                        font-family: 'Mulish-700'
+                        color: var(--black-500)
+                    .footer-apps
+                        display: flex
+                        gap: 3.516vw
+                        padding: 6px 16px
+                        align-items: center
+                        img
+                            height: 40px
+                    .footer-payments
+                        display: flex
+                        align-items: center
+                        margin: 0 auto
+                        gap: 1.172vw
+                        padding: 15px
+                        
+
+                        
+                    .footer-element
+                        font-family: 'Mulish-500'
+                        font-size: 14px
+                        color: var(--black-400)
+                        display: flex
+                        align-items: center
+                        gap: 10px
+                        cursor: pointer
+                        img
+                            width: 20px
+    .digital-info
+        text-align: center
+        font-size: 11px
+        font-family: 'Mulish-700'
+        color: #7E7E7E
+        margin-bottom: 15px
+
+.footer-pointer
+    cursor: pointer
+    padding-bottom: 1px
+    border-bottom: 1px solid transparent
+    transition: 0.2s
+    &:hover
+        border-color: var(--purple-default)
+        transform: scale(1.05)

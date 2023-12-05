@@ -1,0 +1,109 @@
+@import 'variables'
+@import 'fonts'
+@import 'static-styles'
+    
+* 
+    margin: 0
+    padding: 0
+    border: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.cargo
+    margin: 20px 0
+    padding-top: 20px
+    border-top: 1px solid var(--border-color)
+    width: 100%
+    h3
+        font-family: 'Mulish-700'
+        font-size: 1.484vw
+        margin-bottom: 15px
+        color: var(--purple-default)
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        
+        .cargo-weight
+            width: 22.656vw
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            gap: 0.2vw
+            margin-bottom: 20px
+            &-desc
+                font-family: 'Mulish-500'
+                font-size: 14px
+                color: var(--black-400)
+            input
+                width: 290px
+                font-family: 'Mulish-500'
+                font-size: 14px
+                color: var(--black-500)
+                padding-bottom: 4px
+                border-radius: 2px
+                border-bottom: 2px solid #665CD1
+                outline: none
+        .dimensions
+            display: flex
+            flex-direction: column
+            gap: 0.391vw
+            margin-bottom: 20px
+            &-desc
+                font-family: 'Mulish-500'
+                font-size: 14px
+                color: var(--black-400)
+            .dimentions-size
+                display: flex
+                gap: 0.391vw
+                input
+                    width: 73px
+                    font-family: 'Mulish-500'
+                    font-size: 14px
+                    color: var(--black-500)
+                    padding-bottom: 4px
+                    border-radius: 2px
+                    border-bottom: 2px solid #665CD1
+                    outline: none
+                span
+                    width: 25px
+                    text-align: center
+                    font-size: 16px
+                    font-family: 'Mulish-500'
+                    color: var(--black-500)
+    &-comments
+        position: relative
+        margin-bottom: 20px
+        h4
+            font-family: 'Mulish-500'
+            font-size: 14px
+            color: var(--black-400)
+        textarea
+            width: 100%
+            height: 7.031vw
+            outline: none
+            border: 2px solid var(--purple-bg)
+            border-radius: 7px
+            white-space: pre-wrap
+            padding: 8px 8px 33px 8px
+        .length-counter
+            display: block
+            position: absolute
+            bottom: 8px
+            right: 8px
+            color: var(--border-color)
+            font-size: 12px
+            font-family: 'Mulish-500'
+    .forwarder
+        padding: 20px 0
+        border-top: 1px solid var(--border-color)
+        border-bottom: 1px solid var(--border-color)
+        display: flex
+        gap: 10px
+        align-items: center
+        cursor: pointer
+        h3
+            margin: 0
+            font-size: 1.250vw
+            user-select: none

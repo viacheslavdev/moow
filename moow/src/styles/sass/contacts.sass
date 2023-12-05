@@ -1,0 +1,68 @@
+@import 'variables'
+@import 'fonts'
+@import 'static-styles'
+    
+* 
+    margin: 0
+    padding: 0
+    border: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+.contacts
+    margin-bottom: 15px
+    width: 100%
+    h3
+        font-family: 'Mulish-700'
+        font-size: 1.484vw
+        margin-bottom: 15px
+        color: var(--purple-default)
+    &-info
+        margin-top: 15px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding-bottom: 5px
+        border-bottom: 1px solid var(--border-color)
+        .contacts-wrapper
+            width: 46%
+            min-width: 200px
+            display: flex
+            flex-direction: column
+            gap: 5px
+            margin-bottom: 15px
+            &-header
+                font-family: 'Mulish-500'
+                font-size: 14px
+                color: var(--black-400)
+    .payment
+        margin-top: 20px
+        &-wrapper
+            display: flex
+            flex-direction: column
+            gap: 15px
+            .cash-before, .cash-after, .safe-moow
+                background-color: var(--purple-bg)
+                display: flex
+                align-items: center
+                gap: 10px
+                padding: 10px
+                cursor: pointer
+                .payment-method
+                    width: 100%
+                    font-family: 'Mulish-700' 
+                    color: var(--button-bg)
+            .safe-moow
+                .payment-method
+                    text-align: left
+                .cards
+                    color: var(--purple-default)
+                    font-size: 14px
+                    font-family: 'Mulish-300'
+                    width: auto
+                    white-space: nowrap
+                    text-align: right
+
+
+

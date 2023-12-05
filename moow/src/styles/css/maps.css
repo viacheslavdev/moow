@@ -1,0 +1,160 @@
+:root {
+  --purple-default: #665CD1;
+  --purple-bg: #F1F0FF;
+  --button-bg: #171717;
+  --index: calc(1vh + 1vw);
+  --black-400: #5A5A5A;
+  --black-500: #262626;
+  --border-color: #C4C4C4;
+  --test: #9b96e1;
+}
+
+@font-face {
+  font-family: 'Mulish-700';
+  src: url(../fonts/Mulish-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Mulish-400';
+  src: url(../fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Mulish-500';
+  src: url(../fonts/Mulish-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Mulish-300';
+  src: url(../fonts/Mulish-Light.ttf);
+}
+
+.button-static {
+  border: 0;
+  font-size: 1.250vw;
+  font-family: 'Mulish-700';
+  padding: 10px 15px;
+  border-radius: 35px;
+  text-align: center;
+  padding: 0.781vw 1.172vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.route-desc {
+  font-family: 'Mulish-500';
+  font-size: 16px;
+  color: var(--black-500);
+  padding-bottom: 4px;
+  border-radius: 2px;
+  border-bottom: 2px solid #665CD1;
+  outline: none;
+}
+
+.footer-pointer {
+  cursor: pointer;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-pointer:hover {
+  border-color: var(--purple-default);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.maps {
+  width: 39.063vw;
+}
+
+.maps .maps-wrapper {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--purple-bg);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.maps .maps-wrapper img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.maps .maps-wrapper .google-map {
+  width: 100%;
+  height: 33.828vw;
+  margin-bottom: 15px;
+}
+
+.maps .maps-wrapper .maps-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.maps .maps-wrapper .maps-info-values {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.maps .maps-wrapper .maps-info-values:nth-child(4), .maps .maps-wrapper .maps-info-values:nth-child(5) {
+  padding: 0;
+  border: 0;
+}
+
+.maps .maps-wrapper .maps-info-values:nth-child(5), .maps .maps-wrapper .maps-info-values:last-child {
+  margin-left: 14px;
+}
+
+.maps .maps-wrapper .maps-info-values .value-name {
+  font-size: 14px;
+  font-family: 'Mulish-300';
+}
+
+.maps .maps-wrapper .maps-info-values .value-price {
+  font-size: 14px;
+}
+
+.maps .maps-wrapper .full-price {
+  margin-bottom: 15px;
+}
+
+.maps .maps-wrapper .full-price h3 {
+  font-family: 'Mulish-700';
+  font-size: 16px;
+}
+
+.maps .maps-wrapper .full-price .price-uah {
+  font-size: 1.875vw;
+  font-family: 'Mulish-700';
+  color: var(--purple-default);
+}
+
+.maps .maps-wrapper .post {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.maps .maps-wrapper .post-button {
+  box-shadow: 0px 5px 8px 0px rgba(77, 76, 76, 0.4);
+  color: #EBEBEB;
+  background-color: var(--button-bg);
+  white-space: nowrap;
+}
+
+.maps .maps-wrapper .post-button:hover {
+  transform: scale(1.05);
+  background-color: var(--purple-bg);
+  color: var(--button-bg);
+}
